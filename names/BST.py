@@ -9,12 +9,12 @@ class BSTNode:
             if self.left:
                 self.left.insert(value)
             else:
-                self.left = BST(value)
+                self.left = BSTNode(value)
 
             if self.right:
                 self.right.insert(value)
             else:
-                self.right = BST(value)
+                self.right = BSTNode(value)
     
     def contains(self, target):
         if target == self.value:
